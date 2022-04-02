@@ -1,10 +1,14 @@
 <script setup>
 import SunAndCloud from "./components/SunAndCloud.vue";
+import CurrentDayHeader from "./components/CurrentDay/CurrentDayHeader.vue";
+const apiKey = import.meta.env.VITE_API_KEY;
 </script>
 
 <template>
   <main>
-    <section></section>
+    <section>
+      <CurrentDayHeader />
+    </section>
     <section><SunAndCloud /></section>
   </main>
 </template>
@@ -17,9 +21,12 @@ import SunAndCloud from "./components/SunAndCloud.vue";
   margin: 0;
   box-sizing: border-box;
 }
+
 #app {
   height: 100vh;
-  widows: 100vw;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  color: #333;
 }
 
 html {
