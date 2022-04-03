@@ -83,6 +83,7 @@ p {
 }
 .group {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
 }
 .group-data {
