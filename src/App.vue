@@ -1,15 +1,17 @@
 <script setup>
 import SunAndCloud from "./components/SunAndCloud.vue";
-import CurrentDayHeader from "./components/CurrentDay/CurrentDayHeader.vue";
+import CurrentDay from "./components/CurrentDay/CurrentDay.vue";
 const apiKey = import.meta.env.VITE_API_KEY;
 </script>
 
 <template>
   <main>
     <section>
-      <CurrentDayHeader />
+      <CurrentDay />
     </section>
-    <section><SunAndCloud /></section>
+    <section>
+      <SunAndCloud />
+    </section>
   </main>
 </template>
 
@@ -40,7 +42,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 main > * {

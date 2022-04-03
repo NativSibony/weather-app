@@ -17,19 +17,18 @@
 
 <style>
 .sun-and-cloud {
-  display: grid;
-}
-
-.sun,
-.cloud {
-  grid-column: 1;
-  grid-row: 1;
+  position: relative;
+  /* left: -30%; */
+  top: -20%;
+  /* display: flex;
+  justify-self: center;
+  align-self: center; */
 }
 
 .sun {
-  position: relative;
-  top: -60px;
-  left: 200px;
+  position: absolute;
+  top: -50px;
+  /* left: 300px; */
 
   width: 180px;
   height: 180px;
@@ -38,9 +37,9 @@
 }
 
 .cloud {
-  position: relative;
-  top: 0px;
-  left: -100px;
+  position: absolute;
+  top: 0;
+  left: -300px;
 
   margin: auto;
   display: flex;
